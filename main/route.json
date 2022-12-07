@@ -1,36 +1,25 @@
 {
-  "domainStrategy": "IPOnDemand",
   "rules": [
     {
-      "type": "field",
-      "outboundTag": "block",
-      "ip": [
-        "geoip:private"
-      ]
+      "type":"field",
+      "ip":["1.1.1.1","114.114.114.114","8.8.8.8"],
+      "outboundTag":"DNS",
+      "network":"tcp,udp"
+
     },
     {
       "type": "field",
-      "outboundTag": "block",
-      "protocol": [
-        "bittorrent"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "socks5-warp",
-      "domain": []
-    },
-    {
-      "type": "field",
-      "outboundTag": "IPv6_out",
       "domain": [
-        "geosite:netflix"
-      ]
+        "libooc.com", "googleapis.com","ggpht.com",  "earth-pa.googleapis.com","googleusercontent.com","google.com","www.google.com","www.googleapis.com","go.microsoft.com","www.gstatic.com","khmdb.google.com","kh.google.com","googlevideo.com","gvt3.com"
+      ],
+      "outboundTag":"free"
     },
     {
       "type": "field",
-      "outboundTag": "IPv4_out",
-      "network": "udp,tcp"
+      "network":"tcp,udp",
+      "outboundTag":"black"
     }
+
   ]
+
 }

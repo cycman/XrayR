@@ -1,30 +1,33 @@
 [
   {
-    "tag": "IPv4_out",
-    "protocol": "freedom",
-    "settings": {}
+
+    "protocol":"DNS",
+    "tag":"DNS"
+
   },
   {
-    "tag": "IPv6_out",
-    "protocol": "freedom",
-    "settings": {
-      "domainStrategy": "UseIPv6"
-    }
+    "sendThrough": "0.0.0.0",
+    "protocol": "Freedom",
+    "settings": {},
+    "streamSettings": {},
+    "mux": {},
+    "tag": "test"
+  },
+
+  {
+    "sendThrough": "0.0.0.0",
+    "protocol": "Freedom",
+    "settings": {},
+    "streamSettings": {},
+    "mux": {},
+    "tag": "free"
   },
   {
-    "tag": "socks5-warp",
-    "protocol": "socks",
-    "settings": {
-      "servers": [
-        {
-          "address": "127.0.0.1",
-          "port": 1080
-        }
-      ]
-    }
-  },
-  {
-    "protocol": "blackhole",
-    "tag": "block"
+    "sendThrough": "0.0.0.0",
+    "protocol": "Blackhole",
+    "settings": {},
+    "streamSettings": {},
+    "mux": {},
+    "tag":"black"
   }
 ]
