@@ -28,6 +28,18 @@ func (w *Writer) Close() error {
 
 func (w *Writer) WriteMultiBuffer(mb buf.MultiBuffer) error {
 	ctx := context.Background()
+	s := int(mb.Len())
+	if s > w.limiter.Burst() {
+		newError("mb len > burst").AtInfo().WriteToLog()
+		for {
+			if s <= 0 {
+				newError("mb len > burst").AtInfo().WriteToLog()
+				break
+			}
+			s -= w.limiter.Burst()
+			w.limiter.WaitN(ctx, w.limiter.Burst())
+		}
+	}
 	w.limiter.WaitN(ctx, int(mb.Len()))
 	return w.writer.WriteMultiBuffer(mb)
 }
