@@ -1,6 +1,6 @@
 module github.com/XrayR-project/XrayR
 
-go 1.23
+go 1.19
 
 require (
 	github.com/bitly/go-simplejson v0.5.0
@@ -92,7 +92,7 @@ require (
 	github.com/liquidweb/go-lwApi v0.0.5 // indirect
 	github.com/liquidweb/liquidweb-cli v0.6.9 // indirect
 	github.com/liquidweb/liquidweb-go v1.6.3 // indirect
-	github.com/lucas-clemente/quic-go v0.52.0 // indirect
+	github.com/lucas-clemente/quic-go v0.30.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/marten-seemann/qtls-go1-18 v0.1.3 // indirect
