@@ -1,6 +1,6 @@
 module github.com/XrayR-project/XrayR
 
-go 1.19
+go 1.23
 
 require (
 	github.com/bitly/go-simplejson v0.5.0
