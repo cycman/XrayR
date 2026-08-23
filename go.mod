@@ -15,8 +15,8 @@ require (
 	github.com/spf13/viper v1.14.0
 	github.com/stretchr/testify v1.8.1
 	github.com/xtls/xray-core v1.6.3
-	golang.org/x/crypto v0.2.0
-	golang.org/x/net v0.2.0
+	golang.org/x/crypto v0.7.0
+	golang.org/x/net v0.8.0
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858
 	google.golang.org/protobuf v1.28.1
 )
@@ -160,11 +160,11 @@ require (
 	go.starlark.net v0.0.0-20221028183056-acb66ad56dd2 // indirect
 	go.uber.org/ratelimit v0.2.0 // indirect
 	golang.org/x/exp v0.0.0-20221106115401-f9659909a136 // indirect
-	golang.org/x/mod v0.6.0 // indirect
+	golang.org/x/mod v0.8.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20221014153046-6fdb5e3db783 // indirect
-	golang.org/x/sys v0.2.0 // indirect
-	golang.org/x/text v0.4.0 // indirect
-	golang.org/x/tools v0.2.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
+	golang.org/x/tools v0.6.0 // indirect
 	google.golang.org/api v0.102.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20221027153422-115e99e71e1c // indirect
